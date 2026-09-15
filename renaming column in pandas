@@ -1,0 +1,17 @@
+
+
+print("Original DataFrame:")
+print(df)
+
+# Rename columns to make them clearer
+df.rename(columns={
+    'Name': 'Employee_Name',
+    'Salary': 'Annual_Salary',
+    'Department': 'Dept'
+}, inplace=True)
+
+print("\nDataFrame After Renaming Columns:")
+print(df)
+
+print("\nUpdated Column Names:")
+print(df.columns.tolist())
